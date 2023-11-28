@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sammy's Sammies 🥪</title>
+</head>
+
+<body class="bg-secondary">
+
+    <header class="container-fluid">
+        <section class="row">
+            <div class="col-12 bg-warning">
+                <h1>Sammy's Sammies</h1>
+            </div>
+        </section>
+    </header>
+
+    <main class="container-fluid">
+        <section class="row">
+            <div class="col-md-8 ">
+                <!--SECTION MENU SECTION  -->
+                <h2 class="text-center">Menu</h2>
+                <!-- SECTION sandwich cards -->
+                <div class="row">
+                    <!-- SANDWICH TEMPLATE -->
+                    <div class="col-md-6" onclick="buyCaprese()">
+                        <div class="border border-white">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1539252554453-80ab65ce3586?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="caprese">
+                            <div class="d-flex justify-content-between px-2">
+                                <span>Caprese</span>
+                                <span>$11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" onclick="buySandwich('blt')">
+                        <div class="border border-white">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1619096252214-ef06c45683e3?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="blt">
+                            <div class="d-flex justify-content-between px-2">
+                                <span>BLT</span>
+                                <span>$12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" onclick="buySandwich('club sandwich')">
+                        <div class="border border-white">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1567234669013-216f3a40e02e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="club sandwich">
+                            <div class="d-flex justify-content-between px-2">
+                                <span>Club</span>
+                                <span>$11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <!-- SECTION CART SECTION -->
+                <h2 class="text-center">Cart</h2>
+                <div class="border border-white rounded cart-wrapper" id="cart">
+                    <!-- CART ITEM TEMPLATE -->
+                    <!-- <div class="d-flex justify-content-between align-items-baseline p-2">
+                        <span>Sandwich Name</span>
+                        <span>x2</span>
+                        <span>Sandwich Price</span>
+                        <button class="text-danger btn"><i class="mdi mdi-delete"></i></button>
+                    </div> -->
+                </div>
+                <p class="text-end">Total: $<span id="total">0</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid">
+        <section class="row">
+            <div class="col-12 bg-warning text-center">
+                <span>Made with 🥪</span>
+            </div>
+        </section>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
